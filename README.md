@@ -2,8 +2,8 @@
 #### Deployed App: https://space-program-pi-calc.herokuapp.com
 The API handles the following processes
 - Generates, stores and retrieves increasingly accurate value of pi 
-Getting Started:<br>
-Run:
+
+# Getting Started:
 - npm i
 - npm start
 
