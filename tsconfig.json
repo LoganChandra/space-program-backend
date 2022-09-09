@@ -7,6 +7,6 @@
     "esModuleInterop": true,
     "inlineSourceMap": true,
     "noImplicitAny": false,
-    "lib": ["es6","esnext.bigint"]
+    "lib": ["es6","esnext.bigint"]// For bigint functionality
   }
 }

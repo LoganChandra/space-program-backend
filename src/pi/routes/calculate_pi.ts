@@ -3,11 +3,15 @@ import { PiInstance } from "../../model/pi";
 
 const calculate_pi = async (req: express.Request, res: express.Response) => {
   try {
+
+    // RETRIEVE MAX INDEX OF PI 
     let maxIndexRes: any = await PiInstance.max('index')
     let newIndex: any = (maxIndexRes + 1) || 0
 
-    
+    // GET PI
     let pi = getPI(newIndex)
+
+    // CREATE PI INSTANCE IN DB
     PiInstance.create({
       index: newIndex,
       pi: pi
@@ -23,6 +27,7 @@ const calculate_pi = async (req: express.Request, res: express.Response) => {
   }
 };
 
+// FUNCTION TO GET VALUE OF PI BY N DECIMAL PLACES 
 function getPI(n) {
   let idx = n
   n = BigInt(n)

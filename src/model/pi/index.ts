@@ -8,6 +8,7 @@ interface PiAttributes {
 }
 export class PiInstance extends Model<PiAttributes> {}
 
+// DEFINING THE PI MODEL
 PiInstance.init(
   {
     index: {
